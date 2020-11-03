@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo_food"
+        app:srcCompat="@drawable/logo_food" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rumah Makan Paling Enak"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/titleMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Menu - Makanan"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <CheckBox
+        android:id="@+id/checkBox_nasi_goreng"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:text="Nasi Goreng (Rp.15.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMakanan" />
+
+    <EditText
+        android:id="@+id/et_nasi_goreng"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMakanan" />
+
+    <CheckBox
+        android:id="@+id/checkBox_mie_goreng"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="Mie Goreng (Rp.12.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_nasi_goreng"
+        />
+
+    <EditText
+        android:id="@+id/et_mie_goreng"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nasi_goreng"
+       />
+
+    <CheckBox
+        android:id="@+id/checkBox_ayam_bakar_nasi"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="Ayam Bakar + Nasi (Rp.16.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_mie_goreng"
+        />
+
+    <EditText
+        android:id="@+id/et_ayam_bakar_nasi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mie_goreng"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox_ayam_goreng_nasi"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="Ayam Goreng + Nasi (Rp.15.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_ayam_bakar_nasi"
+        />
+
+    <EditText
+        android:id="@+id/et_ayam_goreng_nasi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ayam_bakar_nasi"
+        />
+
+
+    <TextView
+        android:id="@+id/titleMinuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Menu - Minuman"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_ayam_goreng_nasi" />
+
+    <CheckBox
+        android:id="@+id/checkBox_teh"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Teh Panas/Dingin (Rp.5.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMinuman" />
+
+    <EditText
+        android:id="@+id/et_teh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMinuman" />
+
+    <CheckBox
+        android:id="@+id/checkBox_air_mineral_250"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Air Mineral(250ml) (Rp.1.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_teh" />
+
+    <EditText
+        android:id="@+id/et_air_mineral_250"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_teh" />
+
+    <CheckBox
+        android:id="@+id/checkBox_air_mineral_600"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:text="Air Mineral(600ml) (Rp.3.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_air_mineral_250" />
+
+    <EditText
+        android:id="@+id/et_air_mineral_600"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_air_mineral_250" />
+
+    <CheckBox
+        android:id="@+id/checkBox_air_jeruk"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Air Jeruk Panas/Dingin (Rp.6.000,-)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_air_mineral_600" />
+
+    <EditText
+        android:id="@+id/et_air_jeruk"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_air_mineral_600" />
+
+    <Button
+        android:id="@+id/button_hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="0dp"
+        android:text="HITUNG"
+        android:onClick="hitungItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_air_jeruk" />
+
+    <TextView
+        android:id="@+id/totalHargaMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Total Harga Makanan :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hitung" />
+
+    <TextView
+        android:id="@+id/hargaMakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/totalHargaMakanan"
+        app:layout_constraintTop_toBottomOf="@+id/button_hitung" />
+
+    <TextView
+        android:id="@+id/totalHargaMinuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Total Harga Minuman :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalHargaMakanan" />
+
+    <TextView
+        android:id="@+id/hargaMinuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/totalHargaMinuman"
+        app:layout_constraintTop_toBottomOf="@+id/hargaMakanan" />
+
+    <TextView
+        android:id="@+id/totalHargaBiaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Total     \t\t\t\t\t\t\t\t\t\t\t\t :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalHargaMinuman" />
+
+    <TextView
+        android:id="@+id/hargaTotalBiaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/totalHargaBiaya"
+        app:layout_constraintTop_toBottomOf="@+id/hargaMinuman" />
+
+    <TextView
+        android:id="@+id/uangBayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Uang Bayar     \t\t\t\t\t\t   :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalHargaBiaya" />
+
+    <EditText
+        android:id="@+id/et_uangBayar"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp"
+        android:textSize="14dp"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/uangBayar"
+        app:layout_constraintTop_toBottomOf="@+id/hargaTotalBiaya" />
+
+    <Button
+        android:id="@+id/button_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BAYAR"
+        android:onClick="bayarPesanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_uangBayar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
